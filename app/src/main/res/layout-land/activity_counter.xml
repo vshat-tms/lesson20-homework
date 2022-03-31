@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/counter_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CounterActivity">
+
+    <TextView
+        android:id="@+id/counter_activity_tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/info_text_view"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/btn_counter"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_plus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/btn_plus"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_minus"
+
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/btn_minus"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_0"
+
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/btn_zero"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_rnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/btn_rnd"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/color_text_view"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_color_r"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:text="@string/btn_color_r"
+            android:onClick="onColorTextButtonClick"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_color_g"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/btn_color_g"
+            android:onClick="onColorTextButtonClick"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_color_b"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/btn_color_b"
+            android:onClick="onColorTextButtonClick"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_color_m"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/btn_color_m"
+            android:onClick="onColorTextButtonClick"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/background_text_view"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_background_1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:onClick="onBackgroundTextButtonClick"
+                android:text="@string/btn_background_1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_background_2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:onClick="onBackgroundTextButtonClick"
+                android:text="@string/btn_background_2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_background_3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:onClick="onBackgroundTextButtonClick"
+                android:text="@string/btn_background_3"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_background_4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:onClick="onBackgroundTextButtonClick"
+                android:text="@string/btn_background_4"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
