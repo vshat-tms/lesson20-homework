@@ -190,5 +190,13 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_edit_counter"
             android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_share_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/btn_share_counter"
+            android:gravity="center" />
     </LinearLayout>
 </LinearLayout>

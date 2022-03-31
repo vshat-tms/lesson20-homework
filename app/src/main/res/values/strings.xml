@@ -43,4 +43,6 @@
     <string name="set_counter">Set counter</string>
     <string name="btn_set_counter">set</string>
     <string name="btn_edit_counter">edit counter</string>
+    <string name="btn_web">web</string>
+    <string name="btn_share_counter">share counter</string>
 </resources>

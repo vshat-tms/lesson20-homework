@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lessson17">
         <activity
+            android:name=".ShareActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".SetCounterActivity"
             android:exported="false" />
         <activity
@@ -37,7 +46,7 @@
         <activity
             android:name=".CounterActivity"
             android:exported="false"
-            android:label="@string/counter_activity" />
+            android:label="@string/counter_activity"></activity>
     </application>
 
 </manifest>

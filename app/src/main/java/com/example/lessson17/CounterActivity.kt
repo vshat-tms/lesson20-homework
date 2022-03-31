@@ -18,6 +18,7 @@ class CounterActivity : AppCompatActivity() {
     private lateinit var greenColorButton: Button
     private lateinit var magentaColorButton: Button
     private lateinit var setCounterButton: Button
+    private lateinit var shareCounterButton: Button
     private var currentBackgroundColor: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +33,7 @@ class CounterActivity : AppCompatActivity() {
         greenColorButton = findViewById(R.id.btn_color_g)
         magentaColorButton = findViewById(R.id.btn_color_m)
         setCounterButton = findViewById(R.id.btn_edit_counter)
+        shareCounterButton = findViewById(R.id.btn_share_counter)
 
         updateCounter(intent.getIntExtra(PARAM_COUNTER, 0))
         intent.getStringExtra(PARAM_COLOR)?.let { setTextColor(it) }
@@ -59,6 +61,14 @@ class CounterActivity : AppCompatActivity() {
             updateCounter(savedInstanceState.getInt(PARAM_COUNTER))
             infoTextView.setTextColor(savedInstanceState.getInt(PARAM_COLOR))
             savedInstanceState.getString(PARAM_BACKGROUND)?.let { setBg(it) }
+        }
+
+        shareCounterButton.setOnClickListener {
+            var intent = Intent(Intent.ACTION_SEND)
+            val shareBody = counter.toString()
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_SUBJECT, shareBody)
+            startActivity(Intent.createChooser(intent, shareBody))
         }
     }
 
