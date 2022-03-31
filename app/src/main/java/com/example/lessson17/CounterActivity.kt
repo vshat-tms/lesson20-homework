@@ -67,7 +67,7 @@ class CounterActivity : AppCompatActivity() {
             var intent = Intent(Intent.ACTION_SEND)
             val shareBody = counter.toString()
             intent.type = "text/plain"
-            intent.putExtra(Intent.EXTRA_SUBJECT, shareBody)
+            intent.putExtra(Intent.EXTRA_TEXT, shareBody)
             startActivity(Intent.createChooser(intent, shareBody))
         }
     }

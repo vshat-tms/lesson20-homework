@@ -20,6 +20,7 @@
         </activity>
         <activity
             android:name=".SetCounterActivity"
+            android:label="SetCounterActivity"
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
