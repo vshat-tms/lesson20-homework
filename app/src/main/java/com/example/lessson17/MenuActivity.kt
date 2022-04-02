@@ -11,6 +11,38 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+
+        Log.d(TAG, "MenuActivity создано")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "MenuActivity onRestart")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "MenuActivity становиться видимым")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "MenuActivity получает фокус (состояние Resumed)")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "MenuActivity приостановлено (состояние Paused)")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "MenuActivity остановлено (состояние Stopped)")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "MenuActivity уничтожено")
     }
 
     fun btnCounter(view: View) {
@@ -43,5 +75,9 @@ class MenuActivity : AppCompatActivity() {
         when ((view as Button).text) {
             "create counter" -> intentCreateCounter
         }
+    }
+
+    companion object {
+        private const val TAG = "Lifecycle"
     }
 }

@@ -41,6 +41,38 @@ class CreateCounterActivity : AppCompatActivity() {
         colorTextChar = findViewById(R.id.color_text)
         colorBackgroundNumber = findViewById(R.id.color_background)
         error = findViewById(R.id.error)
+
+        Log.d(TAG, "CreateCounterActivity создано")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "CreateCounterActivity onRestart")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "CreateCounterActivity становиться видимым")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "CreateCounterActivity получает фокус (состояние Resumed)")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "CreateCounterActivity приостановлено (состояние Paused)")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "CreateCounterActivity остановлено (состояние Stopped)")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "CreateCounterActivity уничтожено")
     }
 
     fun create(view: View) {
@@ -54,15 +86,12 @@ class CreateCounterActivity : AppCompatActivity() {
         ) {
             startActivity(intentScreenCounter)
         } else {
-            error.text = "Ошибка.. Введите корректные данные."
+            error.text = "ERROR..\n Enter correct data."
         }
-        Log.d(TAG, "value: $screenCountry, " +
-                "color text: $screenTextColor, " +
-                "color background: $screenBackgroundColor.")
     }
 
     companion object {
-        private const val TAG = "CreateCounterActivity"
+        private const val TAG = "Lifecycle"
 
         private val COLOR_TEXT = listOf(
             "r", "g", "b", "m"

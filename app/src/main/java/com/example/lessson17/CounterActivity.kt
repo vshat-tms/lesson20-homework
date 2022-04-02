@@ -2,6 +2,7 @@ package com.example.lessson17
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -46,7 +47,39 @@ class CounterActivity : AppCompatActivity() {
         }
         findViewById<View>(R.id.btn_color_m).setOnClickListener {
             infoTextView.setTextColor(Color.MAGENTA)
+
+            Log.d(TAG, "CounterActivity создано")
         }
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "CounterActivity onRestart")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "CounterActivity становиться видимым")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "CounterActivity получает фокус (состояние Resumed)")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "CounterActivity приостановлено (состояние Paused)")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "CounterActivity остановлено (состояние Stopped)")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "CounterActivity уничтожено")
     }
 
     private fun updateCounter(value: Int) {
@@ -63,5 +96,9 @@ class CounterActivity : AppCompatActivity() {
         }
         val color = Color.parseColor(colorText)
         rootView.setBackgroundColor(color)
+    }
+
+    companion object {
+        private const val TAG = "Lifecycle"
     }
 }

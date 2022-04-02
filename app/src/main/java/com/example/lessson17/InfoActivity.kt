@@ -2,6 +2,7 @@ package com.example.lessson17
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -18,6 +19,38 @@ class InfoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_info)
 
         infoTextView = findViewById(R.id.tv_info)
+
+        Log.d(TAG, "InfoActivity создано")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "InfoActivity onRestart")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "InfoActivity становиться видимым")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "InfoActivity получает фокус (состояние Resumed)")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "InfoActivity приостановлено (состояние Paused)")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "InfoActivity остановлено (состояние Stopped)")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "InfoActivity уничтожено")
     }
 
     fun info(view: View) {
@@ -34,5 +67,9 @@ class InfoActivity : AppCompatActivity() {
             }
             else -> error("unknown command")
         }
+    }
+
+    companion object {
+        private const val TAG = "Lifecycle"
     }
 }

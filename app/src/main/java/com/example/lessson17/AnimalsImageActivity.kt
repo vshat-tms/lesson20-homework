@@ -2,6 +2,7 @@ package com.example.lessson17
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -23,7 +24,39 @@ class AnimalsImageActivity : AppCompatActivity() {
 
         imageView.setOnClickListener {
             updateRotation(rotation + 90)
+
+            Log.d(TAG, "AnimalsImageActivity создано")
         }
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "AnimalsImageActivity onRestert")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "AnimalsImageActivity становиться видимым")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "AnimalsImageActivity получает фокус (состояние Resumed)")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "AnimalsImageActivity приостановлено (состояние Paused)")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "AnimalsImageActivity остановлено (состояние Stopped)")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "AnimalsImageActivity уничтожено")
     }
 
     private fun updateRotation(angle: Float) {
@@ -43,6 +76,9 @@ class AnimalsImageActivity : AppCompatActivity() {
     }
 
     companion object {
+
+        private const val TAG = "Lifecycle"
+
         private val IMAGES_MAP = mapOf(
             "cat" to R.drawable.cat,
             "dog" to R.drawable.dog,

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 
@@ -22,11 +23,43 @@ class ScreenCounterActivity : AppCompatActivity() {
         valueScreen()
         colorTextScreen()
         colorBackgroundScreen()
+
+        Log.d(TAG, "ScreenCounterActivity создано")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "ScreenCounterActivity onRestart")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "ScreenCounterActivity становиться видимым")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "ScreenCounterActivity получает фокус (состояние Resumed)")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "ScreenCounterActivity приостановлено (состояние Paused)")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "ScreenCounterActivity остановлено (состояние Stopped)")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "ScreenCounterActivity уничтожено")
     }
 
     fun valueScreen() {
         val intentValue = Intent(intent)
-        val value = intentValue.getIntExtra("valueCountry",0)
+        val value = intentValue.getIntExtra("valueCountry", 0)
         valueScreenCounter.text = value.toString()
     }
 
@@ -48,5 +81,9 @@ class ScreenCounterActivity : AppCompatActivity() {
             "3" -> colorBackground.setBackgroundColor(Color.BLACK)
             else -> colorBackground.setBackgroundColor(Color.DKGRAY)
         }
+    }
+
+    companion object {
+        private const val TAG = "Lifecycle"
     }
 }
