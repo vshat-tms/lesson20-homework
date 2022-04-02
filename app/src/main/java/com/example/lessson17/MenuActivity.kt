@@ -35,6 +35,13 @@ class MenuActivity : AppCompatActivity() {
         when ((view as Button).text) {
             "info" -> intentInfo
         }
-        Log.d("InfoActivity", "Click: $view")
+    }
+
+    fun btnCreateCounter(view: View) {
+        val intentCreateCounter = Intent(this, CreateCounterActivity::class.java)
+        startActivity(intentCreateCounter)
+        when ((view as Button).text) {
+            "create counter" -> intentCreateCounter
+        }
     }
 }

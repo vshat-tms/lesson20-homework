@@ -37,4 +37,27 @@
             android:onClick="btnInfo"
             android:text="info" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btn_createCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="btnCreateCounter"
+            android:text="create\n counter" />
+
+        <Button
+            android:id="@+id/btn_еще"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="еще\n" />
+
+    </LinearLayout>
 </LinearLayout>
