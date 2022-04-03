@@ -10,8 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lessson17">
         <activity
-            android:name=".MainActivity"
+            android:name=".ShareActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditCounter"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCounterActivity"
+            android:exported="false"
+            android:label="@string/create_counter_activity" />
+        <activity
+            android:name=".CounterActivity"
+            android:exported="false"
+            android:label="@string/counter_activity" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false"
+            android:label="@string/info_activity" />
+        <activity
+            android:name=".AnimalsActivity"
+            android:exported="false"
+            android:label="@string/animals_activity" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true"
+            android:label="@string/menu_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

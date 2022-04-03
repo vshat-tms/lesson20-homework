@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">lessson17</string>
+    <string name="btn_counter">Counter</string>
+    <string name="btn_animals">Animals</string>
+    <string name="btn_create_counter">Create counter</string>
+    <string name="btn_info">Info</string>
+    <string name="btn_maps">Maps</string>
+    <string name="btn_browser">Browser</string>
+    <string name="btn_cat">Cat</string>
+    <string name="btn_dog">Dog</string>
+    <string name="btn_parrot">Parrot</string>
+    <string name="btn_rnd_animal">Random</string>
+    <string name="btn_create">Create</string>
+    <string name="btn_edit">Edit</string>
+
+    <string name="menu_activity">Menu</string>
+    <string name="animals_activity">Images of animals</string>
+    <string name="info_activity">Information</string>
+    <string name="counter_activity">Counter</string>
+    <string name="create_counter_activity">Create counter</string>
+
+    <string name="btn_toast">Toast</string>
+    <string name="btn_device">Device</string>
+    <string name="btn_time">Time</string>
+
+    <string name="incorrect_number_format_msg">Incorrect number format. Try again</string>
+    <string name="incorrect_txt_color_format_msg">Incorrect color format. Try again</string>
+    <string name="incorrect_bg_format_msg">Incorrect background format. Try again</string>
 </resources>
