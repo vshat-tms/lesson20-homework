@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">lessson17</string>
+    <string name="start_screen_hello_message">Hello user !</string>
+    <string name="counter">counter</string>
+    <string name="create_counter">create counter</string>
+    <string name="info">info</string>
+    <string name="image">image</string>
+    <string name="maps">maps</string>
+    <string name="web">web</string>
+    <string name="plus_sign" translatable="false">+</string>
+    <string name="minus_sign" translatable="false">-</string>
+    <string name="zero_number" translatable="false">0</string>
+    <string name="rnd" translatable="false">rnd</string>
+    <string name="r_symbol" translatable="false">r</string>
+    <string name="g_symbol" translatable="false">g</string>
+    <string name="b_symbol" translatable="false">b</string>
+    <string name="m_symbol" translatable="false">m</string>
+    <string name="number_1" translatable="false">1</string>
+    <string name="number_2" translatable="false">2</string>
+    <string name="number_3" translatable="false">3</string>
+    <string name="number_4" translatable="false">4</string>
+    <string name="edit_counter">edit counter</string>
+    <string name="share_counter">share counter</string>
+    <string name="date_format" translatable="false">HH:mm</string>
+    <string name="device">device</string>
+    <string name="time">time</string>
+    <string name="toast">toast</string>
+    <string name="color">color</string>
+    <string name="background">background</string>
+    <string name="cat">cat</string>
+    <string name="dog">dog</string>
+    <string name="parrot">parrot</string>
+    <string name="unknown_command">unknown command</string>
+    <string name="hello_message">hello</string>
+    <string name="counter_editor">Counter editor</string>
+    <string name="set_counter">Set counter value</string>
+    <string name="value">value</string>
+    <string name="set_counter_value">set</string>
+    <string name="crate_counter_in_activity">Create counter</string>
+    <string name="counter_value_field_name">Counter value</string>
+    <string name="text_color_field_name">Text color</string>
+    <string name="text_color_field_values">r, g, b, m</string>
+    <string name="background_color_field_name">Background color</string>
+    <string name="background_colro_field_values">1-4</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="image_textView">image</string>
 </resources>
