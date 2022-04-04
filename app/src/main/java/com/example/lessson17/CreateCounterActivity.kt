@@ -11,35 +11,35 @@ import android.widget.TextView
 
 class CreateCounterActivity : AppCompatActivity() {
 
-    private lateinit var textCountryNumber: TextView
-    private lateinit var colorTextChar: TextView
-    private lateinit var colorBackgroundNumber: TextView
+    private lateinit var textCountry: TextView
+    private lateinit var colorText: TextView
+    private lateinit var colorBackground: TextView
     private lateinit var error: TextView
 
     private var screenCountry: Int?
-        get() = textCountryNumber.text.toString().toIntOrNull()
+        get() = textCountry.text.toString().toIntOrNull()
         set(value) {
-            textCountryNumber.text = value.toString()
+            textCountry.text = value.toString()
         }
 
     private var screenTextColor: String
-        get() = colorTextChar.text.toString()
+        get() = colorText.text.toString()
         set(value) {
-            colorTextChar.text = value
+            colorText.text = value
         }
     private var screenBackgroundColor: String
-        get() = colorBackgroundNumber.text.toString()
+        get() = colorBackground.text.toString()
         set(value) {
-            colorBackgroundNumber.text = value
+            colorBackground.text = value
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_counter)
 
-        textCountryNumber = findViewById(R.id.value_country)
-        colorTextChar = findViewById(R.id.color_text)
-        colorBackgroundNumber = findViewById(R.id.color_background)
+        textCountry = findViewById(R.id.value_country)
+        colorText = findViewById(R.id.color_text)
+        colorBackground = findViewById(R.id.color_background)
         error = findViewById(R.id.error)
 
         Log.d(TAG, "CreateCounterActivity создано")
@@ -85,6 +85,7 @@ class CreateCounterActivity : AppCompatActivity() {
             screenBackgroundColor in COLOR_BACKGROUND && !screenBackgroundColor.isEmpty()
         ) {
             startActivity(intentScreenCounter)
+            error.text = null
         } else {
             error.text = "ERROR..\n Enter correct data."
         }

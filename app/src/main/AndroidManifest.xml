@@ -24,7 +24,7 @@
         <activity
             android:name=".AnimalsImageActivity"
             android:exported="false"
-            android:label="Animals" />
+            android:label="Animals"/>
         <activity
             android:name=".MenuActivity"
             android:exported="true"

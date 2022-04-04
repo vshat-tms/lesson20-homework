@@ -11,7 +11,6 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class InfoActivity : AppCompatActivity() {
-
     private lateinit var infoTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,6 +52,16 @@ class InfoActivity : AppCompatActivity() {
         Log.d(TAG, "InfoActivity уничтожено")
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(INFO_KEY, infoTextView.text.toString())
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        infoTextView.text = savedInstanceState.getString(INFO_KEY)
+    }
+
     fun info(view: View) {
         when ((view as Button).text) {
             "device" -> {
@@ -70,6 +79,8 @@ class InfoActivity : AppCompatActivity() {
     }
 
     companion object {
+        private const val INFO_KEY = "info"
+
         private const val TAG = "Lifecycle"
     }
 }

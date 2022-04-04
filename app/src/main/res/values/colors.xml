@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <color name="btn_color_r">#BC0000</color>
+    <color name="btn_color_g">#02D32F</color>
+    <color name="btn_color_b">#0420BC</color>
+    <color name="btn_color_m">#FF04DE</color>
+
+    <color name="btn_color_1">#302D2D</color>
+    <color name="btn_color_2">#6E6565</color>
+    <color name="btn_color_3">#A89C9C</color>
+    <color name="btn_color_4">#FFFFFF</color>
 </resources>

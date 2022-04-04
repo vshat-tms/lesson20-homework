@@ -7,8 +7,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.annotation.DrawableRes
+import androidx.core.graphics.drawable.toDrawable
 
 class AnimalsImageActivity : AppCompatActivity() {
+
     private var rotation = 0F
 
     @DrawableRes
@@ -59,6 +61,20 @@ class AnimalsImageActivity : AppCompatActivity() {
         Log.d(TAG, "AnimalsImageActivity уничтожено")
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(IMAGE_KEY, currentImageRes)
+        outState.putFloat(IMAGE_ROTATION_KEY, rotation)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        currentImageRes = savedInstanceState.getInt(IMAGE_KEY)
+        imageView.setImageResource(currentImageRes)
+        rotation = savedInstanceState.getFloat(IMAGE_ROTATION_KEY)
+        imageView.rotation = rotation
+    }
+
     private fun updateRotation(angle: Float) {
         rotation = angle
         imageView.rotation = rotation
@@ -66,9 +82,9 @@ class AnimalsImageActivity : AppCompatActivity() {
 
     fun setImage(view: View) {
         val text = (view as Button).text
-        var imageRes = AnimalsImageActivity.IMAGES_MAP[text]
+        var imageRes = IMAGES_MAP[text]
         if (imageRes == null) {
-            imageRes = (AnimalsImageActivity.IMAGES_MAP.values - currentImageRes).random()
+            imageRes = (IMAGES_MAP.values - currentImageRes).random()
         }
         updateRotation(0f)
         currentImageRes = imageRes
@@ -76,6 +92,8 @@ class AnimalsImageActivity : AppCompatActivity() {
     }
 
     companion object {
+        private const val IMAGE_KEY = "image"
+        private const val IMAGE_ROTATION_KEY = "image rotation"
 
         private const val TAG = "Lifecycle"
 
