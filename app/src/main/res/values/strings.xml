@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">lessson17</string>
+    <string name="menu_label">Menu</string>
+    <string name="info_label">Info</string>
+    <string name="image_label">Image</string>
+    <string name="counter_label">Counter</string>
+    <string name="create_counter">Create counter</string>
+    <string name="color_text">Color text (R, G, B, M)</string>
+    <string name="values_counter">Values counter (type integer)</string>
+    <string name="number_background">Number background (1 – 4)</string>
+    <string name="enter_values">Enter the values…</string>
+    <string name="edit_counter">Edit counter</string>
+    <string name="create_button">Create</string>
+    <string name="background">background</string>
+    <string name="color">Color</string>
+    <string name="set_button">Set a value</string>
+    <string name="value_1">1</string>
+    <string name="value_2">2</string>
+    <string name="value_3">3</string>
+    <string name="value_4">4</string>
+    <string name="r">r</string>
+    <string name="g">g</string>
+    <string name="b">b</string>
+    <string name="m">m</string>
+    <string name="sign_plus">+</string>
+    <string name="sign_minus">-</string>
+    <string name="value_0">0</string>
+    <string name="random">rnd</string>
+    <string name="share">share</string>
+    <string name="map">MAP</string>
+    <string name="web">WEB</string>
+    <string name="call">CALL</string>
+    <string name="time">TIME</string>
+    <string name="toast">TOAST</string>
+    <string name="device">DEVICE</string>
+    <string name="others">Application</string>
 </resources>

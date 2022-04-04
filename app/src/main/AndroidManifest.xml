@@ -10,8 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lessson17">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".OtherApplications"
+            android:exported="false" />
+        <activity
+            android:name=".EditCounter"
+            android:exported="false"
+            android:label="@string/edit_counter" />
+        <activity
+            android:name=".CreateCounter"
+            android:exported="false"
+            android:label="@string/create_counter" />
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false"
+            android:label="@string/image_label" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false"
+            android:label="@string/info_label" />
+        <activity
+            android:name=".CounterActivity"
+            android:exported="true"
+            android:label="@string/counter_label" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true"
+            android:label="@string/menu_label">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

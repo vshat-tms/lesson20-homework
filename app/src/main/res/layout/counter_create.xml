@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateCounter">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/text_counter_style"
+        android:text="@string/create_counter"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_counter_style"
+        android:text="@string/values_counter"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/counter_value"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/enter_values"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_counter_style"
+        android:text="@string/color_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/color_text"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/enter_values"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_counter_style"
+        android:text="@string/number_background"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/number_background"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/enter_values"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_button"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
