@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".CreateCounterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:text="Create counter"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text" />
+
+    <TextView
+        android:id="@+id/textViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:background="@drawable/style_frame_text"
+        android:backgroundTint="@color/text_frame"
+        android:text="Counter value (integer)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text" />
+
+    <EditText
+        android:id="@+id/counter_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:background="@drawable/style_frame"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/small_text" />
+
+
+    <TextView
+        android:id="@+id/textViewTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:background="@drawable/style_frame_text"
+        android:backgroundTint="@color/text_frame"
+        android:text="Text color (r,g,b,m)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text" />
+
+    <EditText
+        android:id="@+id/editColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:background="@drawable/style_frame"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="@dimen/small_text" />
+
+    <TextView
+        android:id="@+id/textViewBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:background="@drawable/style_frame_text"
+        android:backgroundTint="@color/text_frame"
+        android:text="Background number (1-4)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text" />
+
+    <EditText
+        android:id="@+id/editBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:background="@drawable/style_frame"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/small_text" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="@dimen/small_text" />
+
+    <Button
+        android:id="@+id/button_create_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_indent"
+        android:text="@string/button_create"
+        android:textSize="@dimen/small_text" />
+
+</LinearLayout>

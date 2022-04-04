@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">lessson17</string>
+
+    <string name="button_counter">counter</string>
+    <string name="button_info">information</string>
+    <string name="button_image">image</string>
+    <string name="button_create_counter">create counter</string>
+    <string name="button_create">create</string>
+
+    <string name="button_cat">cat</string>
+    <string name="button_dog">dog</string>
+    <string name="button_parrot">parrot</string>
+
+    <string name="button_device">device</string>
+    <string name="button_time">time</string>
+    <string name="button_toast">toast</string>
+
+    <string name="button_edit">edit</string>
+
+    <string name="edit_counter_text">Edit counter</string>
+    <string name="value_counter">Counter value</string>
+    <string name="new_counter"></string>
+    <string name="button_rnd">random</string>
+
+    <string name="button_apps">APPS</string>
+    <string name="button_map">MAP</string>
+    <string name="button_web">WEB</string>
+    <string name="button_call">CALL</string>
+
+    <string name="error"></string>
 </resources>

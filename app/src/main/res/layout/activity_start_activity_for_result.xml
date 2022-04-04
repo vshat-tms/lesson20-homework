@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".StartActivityForResult">
+
+    <TextView
+        android:id="@+id/edit_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/medium_indent"
+        android:text="@string/edit_counter_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/medium_indent"
+        android:text="@string/value_counter"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text" />
+
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/medium_indent"
+        android:background="@drawable/style_frame"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/new_counter"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text" />
+
+    <TextView
+        android:id="@+id/editCounterError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/medium_indent"
+        android:text="@string/error"
+        android:textColor="@color/red"
+        android:textSize="@dimen/small_text" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/medium_indent"
+        android:text="@string/button_edit" />
+
+</LinearLayout>
