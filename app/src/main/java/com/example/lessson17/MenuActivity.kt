@@ -6,51 +6,37 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
 
 class MenuActivity : AppCompatActivity() {
 
-    private lateinit var counterButton: Button
-    private lateinit var createCounterButton: Button
-    private lateinit var imageButton: Button
-    private lateinit var infoButton: Button
-    private lateinit var mapsButton: Button
-    private lateinit var webButton: Button
+    private val counterActivity = Intent(this, CounterActivity::class.java)
+    private val crateCounterActivity = Intent(this, CreateCounterActivity::class.java)
+    private val imageActivity = Intent(this, ImageActivity::class.java)
+    private val infoActivity = Intent(this, InfoActivity::class.java)
+    private val mapsActivity = Intent(Intent.ACTION_VIEW, Uri.parse(GEO_TAG))
+    private val webActivity = Intent(Intent.ACTION_VIEW, Uri.parse(WEB_LINK))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-
-        counterButton = findViewById(R.id.counterButton)
-        createCounterButton = findViewById(R.id.createCounterButton)
-        imageButton = findViewById(R.id.imageButton)
-        infoButton = findViewById(R.id.infoButton)
-        mapsButton = findViewById(R.id.mapsButton)
-        webButton = findViewById(R.id.webButton)
     }
 
     fun setIntent(view: View) {
-        starNewActivity(
-            when (view.id) {
-                R.id.counterButton -> Intent(this, CounterActivity::class.java)
-                R.id.createCounterButton -> Intent(this, CreateCounterActivity::class.java)
-                R.id.imageButton -> Intent(this, ImageActivity::class.java)
-                R.id.infoButton -> Intent(this, InfoActivity::class.java)
-                R.id.mapsButton -> Intent(
-                    Intent.ACTION_VIEW,
-                    Uri.parse("geo:-0.45609946,-90.26607513")
-                )
-                R.id.webButton -> Intent(
-                    Intent.ACTION_VIEW,
-                    Uri.parse("https://www.youtube.com/watch?v=jYmeyW7oS1M")
-                )
-                else -> return
-            }
-        )
+        when (view.id) {
+            R.id.counterButton -> startActivity(counterActivity)
+            R.id.createCounterButton -> startActivity(crateCounterActivity)
+            R.id.imageButton -> startActivity(imageActivity)
+            R.id.infoButton -> startActivity(infoActivity)
+            R.id.mapsButton -> startActivity(mapsActivity)
+            R.id.webButton -> startActivity(webActivity)
+            else -> error(R.string.unknown_command)
+        }
     }
 
-    private fun starNewActivity(intent: Intent) {
-        startActivity(intent)
+    companion object {
+        private const val TAG = "MenuActivity info: "
+        private const val GEO_TAG = "geo: 53.962556, 27.427672"
+        private const val WEB_LINK = "https://www.youtube.com/watch?v=jYmeyW7oS1M"
     }
 
     override fun onStart() {
@@ -76,9 +62,5 @@ class MenuActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG, "onDestroy")
-    }
-
-    companion object {
-        private const val TAG = "MenuActivity info: "
     }
 }
