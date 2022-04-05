@@ -10,7 +10,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lessson17">
         <activity
-            android:name=".MainActivity"
+            android:name=".InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image"
+            android:theme="@style/Theme.Lessson17.NoActionBar" />
+        <activity
+            android:name=".CreateCounterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShareActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditCounterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CounterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

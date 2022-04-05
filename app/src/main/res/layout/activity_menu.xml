@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/start_screen_textView_height"
+            android:layout_marginBottom="@dimen/start_screen_textView_marginBottom"
+            android:gravity="bottom|center"
+            android:text="@string/start_screen_hello_message"
+            android:textSize="@dimen/start_screen_hello_message_text_size"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linearLayout_with_button_height"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/counterButton"
+                android:onClick="setIntent"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/counter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linearLayout_with_button_height"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/createCounterButton"
+                android:onClick="setIntent"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/create_counter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linearLayout_with_button_height"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/imageButton"
+                android:onClick="setIntent"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linearLayout_with_button_height"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/infoButton"
+                android:onClick="setIntent"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linearLayout_with_button_height"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mapsButton"
+                android:onClick="setIntent"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/maps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linearLayout_with_button_height"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/webButton"
+                android:onClick="setIntent"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/web" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

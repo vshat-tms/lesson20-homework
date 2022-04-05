@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCounterActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/linearLayout_margin_top"
+            android:text="@string/counter_editor"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:gravity="center"
+            android:text="@string/set_counter"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_marginTop="25sp"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/setCounterValueField"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/value"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="40dp"
+                android:inputType="textAutoCorrect|textCapSentences" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/setCounterValueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_counter_value" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/counterErrorMessageField"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/error_message_color"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
