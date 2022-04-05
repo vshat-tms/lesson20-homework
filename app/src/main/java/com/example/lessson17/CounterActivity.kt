@@ -51,6 +51,14 @@ class CounterActivity : AppCompatActivity() {
         findViewById<View>(R.id.btn_counter_0).setOnClickListener {
             updateCounter(INITIAL_COUNTER_VALUE)
         }
+
+        findViewById<Button>(R.id.button_share).setOnClickListener {
+            val share = Intent(Intent.ACTION_SEND)
+            val shareBody = counter.toString()
+            share.type = "text/plain"
+            share.putExtra(Intent.EXTRA_TEXT, shareBody)
+            startActivity(Intent.createChooser(share, shareBody))
+        }
     }
 
     private fun updateCounter(value: Int) {

@@ -26,6 +26,7 @@
     <string name="button_map">MAP</string>
     <string name="button_web">WEB</string>
     <string name="button_call">CALL</string>
+    <string name="button_share">share</string>
 
     <string name="error"></string>
 </resources>
