@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppsActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp">
+
+        <Button
+            android:id="@+id/webButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="toGo"
+            android:text="Web"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="toGo"
+            android:text="Map"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="toGo"
+            android:text="Call"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

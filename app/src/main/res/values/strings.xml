@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">lessson17</string>
+    <string name="app_name">lessson20</string>
+    <string name="label_name_Main">Main</string>
+    <string name="label_name_Menu">Menu</string>
+    <string name="label_name_Animal">Animal</string>
+    <string name="label_name_Info">Info</string>
+    <string name="label_name_CreateCounter">CreateCounter</string>
+    <string name="label_name_EditCounter">EditCounter</string>
+    <string name="label_name_AppsActivity">Apps</string>
 </resources>

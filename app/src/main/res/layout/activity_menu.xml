@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/infoMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/layout_marginTop_TextView"
+        android:gravity="center"
+        android:text="Menu"
+        android:textColor="@color/text_Color_TextView"
+        android:textSize="@dimen/size_Text_TextView" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp">
+
+        <Button
+            android:id="@+id/mainButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="goTo"
+            android:text="Main"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/animalButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="goTo"
+            android:text="Animal"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/infoButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="goTo"
+            android:text="Info"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp">
+
+        <Button
+            android:id="@+id/appsButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="goTo"
+            android:text="Apps"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>
