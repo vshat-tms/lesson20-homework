@@ -10,9 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lessson17">
         <activity
+            android:name=".ShareActivity"
+            android:exported="true"
+            android:label="@string/label_name_ShareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".AppsActivity"
             android:exported="false"
-            android:label="@string/label_name_AppsActivity"/>
+            android:label="@string/label_name_AppsActivity" />
         <activity
             android:name=".EditCounterActivity"
             android:exported="false"
@@ -44,5 +56,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

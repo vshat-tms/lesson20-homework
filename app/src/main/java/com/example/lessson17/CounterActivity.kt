@@ -49,9 +49,9 @@ class CounterActivity : AppCompatActivity() {
             intentShare.type = "text/plain"
             intentShare.putExtra(
                 Intent.EXTRA_SUBJECT,
-                VALUE_COUNTER
+                infoTextView.text
             )
-            startActivity(Intent.createChooser(intentShare, VALUE_COUNTER))
+            startActivity(Intent.createChooser(intentShare, infoTextView.text))
         }
 
         findViewById<View>(R.id.buttonCounterMinus).setOnClickListener {

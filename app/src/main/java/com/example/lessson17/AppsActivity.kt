@@ -18,16 +18,15 @@ class AppsActivity : AppCompatActivity() {
     fun toGo(view: View) {
         when ((view as Button).text) {
             "Web" -> {
-                val intentWeb = Intent(Intent.ACTION_VIEW, Uri.parse("https://stackoverflow.com/"))
+                val intentWeb = Intent(Intent.ACTION_VIEW, Uri.parse(WEB))
                 startActivity(intentWeb)
             }
             "Map" -> {
-                val intentMap =
-                    Intent(Intent.ACTION_VIEW, Uri.parse("geo:-0.45609946, -90.26607513"))
+                val intentMap = Intent(Intent.ACTION_VIEW, Uri.parse(GEO))
                 startActivity(intentMap)
             }
             "Call" -> {
-                val intentCall = Intent(Intent.ACTION_DIAL, Uri.parse("tel:12345"))
+                val intentCall = Intent(Intent.ACTION_DIAL, Uri.parse(NUMBER))
                 startActivity(intentCall)
             }
         }
@@ -56,5 +55,11 @@ class AppsActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG, "AppsActivity onDestroy")
+    }
+
+    companion object {
+        const val WEB = "https://stackoverflow.com/"
+        const val GEO = "geo:-0.45609946, -90.26607513"
+        const val NUMBER = "tel:80291111111"
     }
 }

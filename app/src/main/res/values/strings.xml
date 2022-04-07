@@ -7,4 +7,5 @@
     <string name="label_name_CreateCounter">CreateCounter</string>
     <string name="label_name_EditCounter">EditCounter</string>
     <string name="label_name_AppsActivity">Apps</string>
+    <string name="label_name_ShareActivity">Share</string>
 </resources>
