@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity">
+    <TextView
+        android:id="@+id/textShare"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:text="Name"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/text_view_style"
+        />
+</LinearLayout>
