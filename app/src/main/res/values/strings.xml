@@ -1,3 +1,54 @@
 <resources>
-    <string name="app_name">lessson17</string>
+    <string name="app_name">lessson20</string>
+    <!--  menu activity  -->
+    <string name="counter_btn">counter</string>
+    <string name="picture_btn">picture</string>
+    <string name="info_btn">info</string>
+    <string name="create_btn">Create counter</string>
+    <string name="web_btn">WEB</string>
+    <string name="map_btn">MAP</string>
+    <!--picture activity-->
+    <string name="cat_picture">cat</string>
+    <string name="dog_picture">dog</string>
+    <string name="parrot_picture">parrot</string>
+    <string name="rnd_picture">rnd</string>
+    <!--info activity-->
+    <string name="device_btn">device</string>
+    <string name="time_btn">time</string>
+    <string name="toast_btn">toast</string>
+    <string name="info_text">Information</string>
+    <!--  create counter activity  -->
+    <string name="create_counter">Create Counter</string>
+    <string name="value_counter">Counter value (integer)</string>
+    <string name="enter_number">Enter the number</string>
+    <string name="enter_color">Enter the color</string>
+    <string name="text_color">Text color (r,g,b,m)</string>
+    <string name="background_number">Background number (1–4)</string>
+    <string name="enter_background">Enter the background</string>
+    <string name="error_textView_counter_values">Error, please enter the counter values as an integer</string>
+    <string name="error_textView_counter_color">Error, please enter the text color R,G,B,M</string>
+    <string name="error_textView_counter_background">Error, please enter background values 1–4</string>
+    <string name="error_textView_repeat">Repeat the enter</string>
+    <!--  counter activity  -->
+    <string name="edit_btn">Edit counter</string>
+    <string name="share_btn">Share</string>
+    <string name="background_value_1">1</string>
+    <string name="background_value_2">2</string>
+    <string name="background_value_3">3</string>
+    <string name="background_value_4">4</string>
+    <string name="text_view_color">color</string>
+    <string name="text_view_background">background</string>
+    <string name="text_view_counter">counter</string>
+    <string name="color_text_red">r</string>
+    <string name="color_text_green">g</string>
+    <string name="color_text_blue">b</string>
+    <string name="color_text_magenta">m</string>
+    <!--  Edit Counter  -->
+    <string name="edit_counter_textView">Edit Counter</string>
+    <string name="counter_value_textView">Counter value</string>
+    <string name="enter_integer_value_Edittext_hint">Enter an integer value</string>
+    <string name="set_button">Set</string>
+    <string name="error_textView_editCounter">Enter an integer value. Try again</string>
+
+
 </resources>
