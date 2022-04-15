@@ -10,13 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lessson17">
         <activity
+            android:name=".MyApplicationsActivity"
+            android:exported="false"
+            android:label="My applications"/>
+        <activity
+            android:name=".EditCounterActivity"
+            android:exported="false"
+            android:label="Edit counter" />
+        <activity
             android:name=".ScreenCounterActivity"
             android:exported="false"
-            android:label=" Screen counter"/>
+            android:label="Screen counter" />
         <activity
             android:name=".CreateCounterActivity"
             android:exported="false"
-            android:label="Create counter"/>
+            android:label="Create counter" />
         <activity
             android:name=".InfoActivity"
             android:exported="false"
@@ -24,7 +32,7 @@
         <activity
             android:name=".AnimalsImageActivity"
             android:exported="false"
-            android:label="Animals"/>
+            android:label="Animals" />
         <activity
             android:name=".MenuActivity"
             android:exported="true"

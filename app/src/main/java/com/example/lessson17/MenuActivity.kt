@@ -77,6 +77,14 @@ class MenuActivity : AppCompatActivity() {
         }
     }
 
+    fun btnMyApplications(view: View) {
+        val intentMyApplications = Intent(this, MyApplicationsActivity::class.java)
+        startActivity(intentMyApplications)
+        when ((view as Button).text) {
+            "my applications" -> intentMyApplications
+        }
+    }
+
     companion object {
         private const val TAG = "Lifecycle"
     }

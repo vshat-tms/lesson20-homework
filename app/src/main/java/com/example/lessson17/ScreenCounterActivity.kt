@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 
 class ScreenCounterActivity : AppCompatActivity() {
@@ -80,6 +81,31 @@ class ScreenCounterActivity : AppCompatActivity() {
             "2" -> colorBackground.setBackgroundColor(Color.YELLOW)
             "3" -> colorBackground.setBackgroundColor(Color.BLACK)
             else -> colorBackground.setBackgroundColor(Color.DKGRAY)
+        }
+    }
+
+    fun btnEdit(view: View) {
+        val intentEditCounter = Intent(this, EditCounterActivity::class.java)
+        startActivityForResult(intentEditCounter, 1)
+    }
+
+    fun btnShare(view: View) {
+        val intentSend = Intent()
+        intentSend.action = Intent.ACTION_SEND
+        intentSend.putExtra(Intent.EXTRA_TEXT, valueScreenCounter.text)
+        intentSend.type = "text/plain"
+
+        val intentShare = Intent.createChooser(intentSend, null)
+        startActivity(intentShare)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (data == null) {
+            return
+        } else {
+            var count = data.getIntExtra("newValueCountry", 0)
+            valueScreenCounter.text = count.toString()
         }
     }
 

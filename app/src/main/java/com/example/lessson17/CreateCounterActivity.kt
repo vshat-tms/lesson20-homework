@@ -102,6 +102,9 @@ class CreateCounterActivity : AppCompatActivity() {
             "1", "2", "3", "4"
         )
     }
+
+    fun btnEdit(view: View) {}
+    fun btnShare(view: View) {}
 }
 
 

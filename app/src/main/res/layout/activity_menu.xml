@@ -41,7 +41,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="55dp"
+        android:paddingLeft="30dp"
         android:paddingTop="20dp">
 
         <Button
@@ -57,7 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="еще\n" />
+            android:onClick="btnMyApplications"
+            android:text="my\n applications" />
 
     </LinearLayout>
 </LinearLayout>
