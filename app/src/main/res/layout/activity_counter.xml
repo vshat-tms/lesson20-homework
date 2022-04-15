@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CounterActivity">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="info"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="counter"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_plus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setInfoValue"
+            android:text="+"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_minus"
+
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setInfoValue"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_0"
+
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setInfoValue"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_counter_rnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setInfoValue"
+            android:text="rnd"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="color"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:onClick="setColorText"
+            android:text="r"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setColorText"
+            android:text="g"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setColorText"
+            android:text="b"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setColorText"
+            android:text="m"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="background"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setBg"
+            android:text="1"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setBg"
+            android:text="2"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setBg"
+            android:text="3"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="setBg"
+            android:text="4"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

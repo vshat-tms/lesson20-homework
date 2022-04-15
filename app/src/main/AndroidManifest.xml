@@ -10,14 +10,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lessson17">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".MyApplicationsActivity"
+            android:exported="false"
+            android:label="My applications"/>
+        <activity
+            android:name=".EditCounterActivity"
+            android:exported="false"
+            android:label="Edit counter" />
+        <activity
+            android:name=".ScreenCounterActivity"
+            android:exported="false"
+            android:label="Screen counter" />
+        <activity
+            android:name=".CreateCounterActivity"
+            android:exported="false"
+            android:label="Create counter" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false"
+            android:label="Info" />
+        <activity
+            android:name=".AnimalsImageActivity"
+            android:exported="false"
+            android:label="Animals" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true"
+            android:label="Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CounterActivity"
+            android:exported="false"
+            android:label="Counter" />
     </application>
 
 </manifest>
